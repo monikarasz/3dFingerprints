@@ -5,7 +5,7 @@ To represent molecules of various sizes as fixed-length vectors that allow for a
 What happens in the code?
 1) Preprocessing: creating a rotation-and-translation-independent representation of atom positions within a molecule (by introducing an internal coordinate system for each molecule)
 2) Training of a regression model with an intermediate output (fixed-length vector):
-   - input x: graph representations of molecules, consisting of node features (position (x,y,z) and atomic number of each atom) and adjacency matrix
+   - input x: graph representations of molecules, consisting of node features (position (x,y,z) and atomic number of each atom) and the adjacency matrix
    - input y: dipole moments of the molecules (real numbers)
    - output: predicted dipole moments
    - intermediate output: latent space representations of molecules (fixed-size vectors)
